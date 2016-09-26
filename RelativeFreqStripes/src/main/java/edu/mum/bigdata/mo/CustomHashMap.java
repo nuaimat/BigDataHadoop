@@ -5,6 +5,7 @@ import java.io.DataOutput;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.TreeMap;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.hadoop.io.IntWritable;
@@ -14,7 +15,7 @@ import org.apache.hadoop.io.WritableComparable;
 /**
  * Created by Mo nuaimat on 9/11/16.
  */
-public class CustomHashMap extends HashMap<Text, IntWritable> implements WritableComparable<CustomHashMap> {
+public class CustomHashMap extends TreeMap<Text, IntWritable> implements WritableComparable<CustomHashMap> {
     @Override
     public String toString(){
         String ret = "{";
